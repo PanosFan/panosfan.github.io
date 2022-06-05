@@ -1,4 +1,4 @@
-button {
+.backToTopButton {
   width: 75px;
   height: 75px;
   cursor: pointer;
@@ -9,7 +9,7 @@ button {
   transition: 200ms;
 }
 
-button svg {
+.backToTopButton svg {
   fill: white;
   width: 30px;
   height: 30px;
@@ -17,7 +17,7 @@ button svg {
   transform: translateX(-50%) translateY(-50%);
 }
 
-button:before {
+.backToTopButton:before {
   content: "Back to Top";
   position: absolute;
   transform: translateX(-50%) translateY(45px);
@@ -27,17 +27,17 @@ button:before {
   font-weight: bold;
 }
 
-button:hover {
+.backToTopButton:hover {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
   width: 80px;
   height: 80px;
 }
 
-button:hover::before {
+.backToTopButton:hover::before {
   color: #fff;
 }
 
-button:hover svg {
+.backToTopButton:hover svg {
   animation: bounce 2s infinite linear;
 }
 
@@ -59,6 +59,6 @@ button:hover svg {
   }
 }
 
-button:focus {
+.backToTopButton:focus {
   outline: none;
 }
