@@ -4,9 +4,10 @@ import Header from "./Components/Layout/Header/Header";
 import Navbar from "./Components/Layout/Navbar/Navbar";
 import LoadingEffect from "./Components/LoadingEffect/LoadingEffect";
 import { useEffect, useState } from "react";
+import Aside from "./Components/Layout/Aside/Aside";
 
 function App() {
-  const [effect, setEffect] = useState(true);
+  const [effect, setEffect] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -18,9 +19,12 @@ function App() {
     <LoadingEffect />
   ) : (
     <>
-      <Navbar />
-      <Header />
-      <Footer />
+      <Aside />
+      <div className="container">
+        <Navbar />
+        <Header />
+        <Footer />
+      </div>
     </>
   );
 }
