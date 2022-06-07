@@ -2,7 +2,7 @@ import "./BackToTopButton.scss";
 
 const BackToTopButton = () => {
   return (
-    <button class="noselect backToTopButton">
+    <button className="noselect backToTopButton">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"

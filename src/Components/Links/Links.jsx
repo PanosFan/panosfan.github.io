@@ -5,21 +5,21 @@ import { FaGithub } from "react-icons/fa";
 
 const Links = () => {
   return (
-    <ul class="links">
-      <li class="icon facebook">
-        <span class="tooltip">Facebook</span>
+    <ul className="links">
+      <li className="icon facebook">
+        <span className="tooltip">Facebook</span>
         <span>
           <FaFacebookF />
         </span>
       </li>
-      <li class="icon github">
-        <span class="tooltip">Github</span>
+      <li className="icon github">
+        <span className="tooltip">Github</span>
         <span>
           <FaGithub />
         </span>
       </li>
-      <li class="icon linkedin">
-        <span class="tooltip">Linkedin</span>
+      <li className="icon linkedin">
+        <span className="tooltip">Linkedin</span>
         <span>
           <FaLinkedinIn />
         </span>

@@ -7,9 +7,11 @@ const Footer = () => {
     <footer className="text-center">
       {/* <BackToTopButton /> */}
       <Links />
-      <a id="mailTo" href="mailto:panfanartzis@gmail.com">
-        panfanartzis@gmail.com
-      </a>
+      <div>
+        <a id="mailTo" href="mailto:panfanartzis@gmail.com">
+          panfanartzis@gmail.com
+        </a>
+      </div>
     </footer>
   );
 };

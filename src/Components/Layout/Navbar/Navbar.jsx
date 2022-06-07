@@ -3,6 +3,7 @@ import { FaUser } from "react-icons/fa";
 import { BsFillChatSquareTextFill } from "react-icons/bs";
 import { ImHome } from "react-icons/im";
 import { MdOutlineWork } from "react-icons/md";
+import { MdComputer } from "react-icons/md";
 
 const Navbar = () => {
   return (
@@ -16,6 +17,9 @@ const Navbar = () => {
 
       <a href="">
         <MdOutlineWork />
+      </a>
+      <a href="">
+        <MdComputer />
       </a>
       <a href="">
         <BsFillChatSquareTextFill />
