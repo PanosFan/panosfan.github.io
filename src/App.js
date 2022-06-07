@@ -7,7 +7,7 @@ import LandingEffect from "./Components/LandingEffect/LandingEffect";
 import Aside from "./Components/Layout/Aside/Aside";
 
 function App() {
-  const [landed, setLanded] = useState(true);
+  const [landed, setLanded] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -23,7 +23,7 @@ function App() {
       <div className="container">
         <Navbar />
         <Header />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

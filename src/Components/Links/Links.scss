@@ -100,7 +100,26 @@
     color: #ffffff;
   }
 }
+@media (max-width: 768px) {
+  .links {
+    position: unset;
+    display: inline-flex;
 
-@media screen and (max-width: 768px) {
-  // pos tha fainetai sto footer
+    .tooltip {
+      top: 0;
+      left: unset;
+    }
+
+    .tooltip::before {
+      top: unset;
+      bottom: -3px;
+      left: 50%;
+      transform: translate(-50%) rotate(45deg);
+    }
+
+    .icon:hover .tooltip {
+      left: unset;
+      top: -45px;
+    }
+  }
 }
