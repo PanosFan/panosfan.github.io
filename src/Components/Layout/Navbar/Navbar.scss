@@ -1,5 +1,25 @@
+@import "../../../Colours.scss";
 nav {
   position: fixed;
-  bottom: 0;
+  bottom: 1%;
   left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
+  backdrop-filter: blur(3px);
+  display: flex;
+  gap: 1em;
+  z-index: 999;
+  padding: 0.8em;
+  a {
+    color: $primaryColour;
+    background: transparent;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 0.7em;
+    border-radius: 50%;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
 }

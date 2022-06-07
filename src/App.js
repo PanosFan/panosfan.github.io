@@ -1,29 +1,29 @@
 import "./Config.scss";
+import { useEffect, useState } from "react";
 import Footer from "./Components/Layout/Footer/Footer";
 import Header from "./Components/Layout/Header/Header";
 import Navbar from "./Components/Layout/Navbar/Navbar";
-import LoadingEffect from "./Components/LoadingEffect/LoadingEffect";
-import { useEffect, useState } from "react";
+import LandingEffect from "./Components/LandingEffect/LandingEffect";
 import Aside from "./Components/Layout/Aside/Aside";
 
 function App() {
-  const [effect, setEffect] = useState(false);
+  const [landed, setLanded] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
-      setEffect(false);
-    }, 2000);
+      setLanded(false);
+    }, 2300);
   }, []);
 
-  return effect ? (
-    <LoadingEffect />
+  return landed ? (
+    <LandingEffect />
   ) : (
     <>
       <Aside />
       <div className="container">
         <Navbar />
         <Header />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );

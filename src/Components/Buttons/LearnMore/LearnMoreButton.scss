@@ -1,6 +1,4 @@
-$main: black;
-$second: white;
-
+@import "../../../Colours.scss";
 @mixin transition(
   $property: all,
   $duration: 0.45s,
@@ -31,7 +29,7 @@ $second: white;
       margin: 0;
       width: 3rem;
       height: 3rem;
-      background: $second;
+      background: $white;
       border-radius: 1.625rem;
       .icon {
         @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
@@ -39,7 +37,7 @@ $second: white;
         top: 0;
         bottom: 0;
         margin: auto;
-        background: $main;
+        background: $black;
         &.arrow {
           @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
           left: 0.625rem;
@@ -69,7 +67,7 @@ $second: white;
       bottom: 0;
       padding: 0.75rem 0;
       margin: 0 0 0 1.85rem;
-      color: $second;
+      color: $white;
       font-weight: 700;
       line-height: 1.6;
       text-align: center;
@@ -81,13 +79,13 @@ $second: white;
       width: 100%;
       .icon {
         &.arrow {
-          background: $main;
+          background: $black;
           transform: translate(1rem, 0);
         }
       }
     }
     .button-text {
-      color: $main;
+      color: $black;
     }
   }
 }

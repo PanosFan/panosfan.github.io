@@ -10,6 +10,20 @@
   bottom: 0;
   list-style: none;
 
+  //after psudo like mailto element
+  // margin-bottom: 5em;
+
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: -5em;
+  //   left: 30px;
+  //   width: 1px;
+  //   height: 13em;
+  //   background: teal;
+  //   z-index: -1;
+  // }
+
   .icon {
     color: black;
     position: relative;
@@ -68,7 +82,7 @@
   .facebook:hover,
   .facebook:hover .tooltip,
   .facebook:hover .tooltip::before {
-    background: #1877f2;
+    background: #4267b2;
     color: #ffffff;
   }
 
@@ -82,7 +96,11 @@
   .linkedin:hover,
   .linkedin:hover .tooltip,
   .linkedin:hover .tooltip::before {
-    background: #cd201f;
+    background: #0077b5;
     color: #ffffff;
   }
+}
+
+@media screen and (max-width: 768px) {
+  // pos tha fainetai sto footer
 }
