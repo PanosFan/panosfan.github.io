@@ -5,9 +5,11 @@ import Links from "../../Links/Links";
 const Footer = () => {
   return (
     <footer className="text-center">
-      <p>Footer</p>
       {/* <BackToTopButton /> */}
       <Links />
+      <a id="mailTo" href="mailto:panfanartzis@gmail.com">
+        panfanartzis@gmail.com
+      </a>
     </footer>
   );
 };
