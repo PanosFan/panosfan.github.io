@@ -5,13 +5,13 @@ import Links from "../../Links/Links";
 const Footer = () => {
   return (
     <footer className="text-center">
-      {/* <BackToTopButton /> */}
       <Links />
       <div>
         <a id="mailTo" href="mailto:panfanartzis@gmail.com">
           panfanartzis@gmail.com
         </a>
       </div>
+      <BackToTopButton />
     </footer>
   );
 };

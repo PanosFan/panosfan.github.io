@@ -2,28 +2,28 @@ import "./Navbar.scss";
 import { FaUser } from "react-icons/fa";
 import { BsFillChatSquareTextFill } from "react-icons/bs";
 import { ImHome } from "react-icons/im";
-import { MdOutlineWork } from "react-icons/md";
-import { MdComputer } from "react-icons/md";
+import { MdOutlineWork, MdComputer } from "react-icons/md";
+import Link from "react-scroll/modules/components/Link";
 
 const Navbar = () => {
   return (
     <nav>
-      <a href="">
+      <Link activeClass="active" smooth spy to="home">
         <ImHome />
-      </a>
-      <a href="">
+      </Link>
+      <Link activeClass="active" smooth spy to="about">
         <FaUser />
-      </a>
+      </Link>
 
-      <a href="">
+      <Link activeClass="active" smooth spy to="projects">
         <MdOutlineWork />
-      </a>
-      <a href="">
+      </Link>
+      <Link activeClass="active" smooth spy to="skills">
         <MdComputer />
-      </a>
-      <a href="">
+      </Link>
+      <Link activeClass="active" smooth spy to="contact">
         <BsFillChatSquareTextFill />
-      </a>
+      </Link>
     </nav>
   );
 };

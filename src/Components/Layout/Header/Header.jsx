@@ -3,10 +3,10 @@ import LearnMoreButton from "../../Buttons/LearnMore/LearnMoreButton";
 
 const Header = () => {
   return (
-    <div>
+    <section id="home">
       <p>Header</p>
       <LearnMoreButton />
-    </div>
+    </section>
   );
 };
 
