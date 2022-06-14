@@ -8,6 +8,7 @@ import Contact from "./Components/Layout/Contact/Contact";
 import Skills from "./Components/Layout/Skills/Skills";
 import LandingEffect from "./Components/LandingEffect/LandingEffect";
 import Aside from "./Components/Layout/Aside/Aside";
+import Projects from "./Components/Layout/Projects/Projects";
 
 function App() {
   const [landed, setLanded] = useState(false);
@@ -32,6 +33,7 @@ function App() {
         <About />
         <Skills />
         <Contact />
+        <Projects />
       </main>
       <Footer />
     </>
