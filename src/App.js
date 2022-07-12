@@ -19,13 +19,13 @@ function App() {
     }, 2300);
   }, []);
 
-  const toggleLightMode = () => document.body.classList.toggle("light");
+  // const toggleLightMode = () => document.body.classList.toggle("light");
 
   return landed ? (
     <LandingEffect />
   ) : (
     <>
-      <button onClick={toggleLightMode}>Test</button>
+      {/* <button onClick={toggleLightMode}>Test</button> */}
       <Navbar />
       <Aside />
       <main className="container">

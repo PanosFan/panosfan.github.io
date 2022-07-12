@@ -9,7 +9,7 @@ const Links = () => {
     <ul className="links">
       <li
         className="icon facebook"
-        onClick={() => openLink("https://www.facebook.com/huehue12312/")}
+        onClick={() => openLink("https://www.facebook.com/panosfan11629414/")}
       >
         <span className="tooltip">Facebook</span>
         <span>
