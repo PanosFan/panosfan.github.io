@@ -3,6 +3,10 @@ import { useState } from "react";
 
 const Contact = () => {
   const handleSubmit = () => {
+    var btn = document.getElementById("btn");
+    var btnText = document.getElementById("btnText");
+    btnText.innerHTML = "Thanks";
+    btn.classList.add("submitted");
     setTimeout(() => {
       setName("");
       setEmail("");
@@ -26,31 +30,38 @@ const Contact = () => {
       >
         <label htmlFor="Name">Name</label>
         <input
+          required
           value={name}
           type="text"
           name="entry.606424351"
           id="entry.606424351"
-          required
           onChange={(e) => setName(e.target.value)}
         />
         <label htmlFor="Email">Email</label>
         <input
+          required
           value={email}
           type="email"
           name="entry.1555727373"
           id="entry.1555727373"
-          required
           onChange={(e) => setEmail(e.target.value)}
         />
         <label htmlFor="Message">Message</label>
         <textarea
+          required
           value={message}
           name="entry.1013502747"
           id="entry.1013502747"
-          required
           onChange={(e) => setMessage(e.target.value)}
         />
-        <button type="submit">Send</button>
+        <button id="btn" type="submit" className="submitButton">
+          <p id="btnText">Submit</p>
+          <div class="checked">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path>
+            </svg>
+          </div>
+        </button>
       </form>
       <iframe
         title="hidden_iframe"
