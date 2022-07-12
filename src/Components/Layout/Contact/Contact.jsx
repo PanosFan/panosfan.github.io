@@ -2,13 +2,16 @@ import "./Contact.scss";
 import { useState } from "react";
 
 const Contact = () => {
-  const [Submitted, setSubmitted] = useState(false);
   const handleSubmit = () => {
-    setSubmitted(true);
     setTimeout(() => {
-      setSubmitted(false);
-    }, 4000);
+      setName("");
+      setEmail("");
+      setMessage("");
+    }, 100);
   };
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   return (
     <section id="contact">
@@ -23,30 +26,38 @@ const Contact = () => {
       >
         <label htmlFor="Name">Name</label>
         <input
+          value={name}
           type="text"
           name="entry.606424351"
           id="entry.606424351"
           required
+          onChange={(e) => setName(e.target.value)}
         />
         <label htmlFor="Email">Email</label>
         <input
+          value={email}
           type="email"
           name="entry.1555727373"
           id="entry.1555727373"
           required
+          onChange={(e) => setEmail(e.target.value)}
         />
         <label htmlFor="Message">Message</label>
-        <textarea name="entry.1013502747" id="entry.1013502747" required />
+        <textarea
+          value={message}
+          name="entry.1013502747"
+          id="entry.1013502747"
+          required
+          onChange={(e) => setMessage(e.target.value)}
+        />
         <button type="submit">Send</button>
       </form>
       <iframe
+        title="hidden_iframe"
         name="hidden_iframe"
         id="hidden_iframe"
         style={{ display: "none" }}
       />
-      {Submitted ? (
-        <p style={{ color: "yellow" }}>Thank you for your message!</p>
-      ) : null}
     </section>
   );
 };
