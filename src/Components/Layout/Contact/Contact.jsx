@@ -5,6 +5,9 @@ const Contact = () => {
   const [Submitted, setSubmitted] = useState(false);
   const handleSubmit = () => {
     setSubmitted(true);
+    setTimeout(() => {
+      setSubmitted(false);
+    }, 4000);
   };
 
   return (
@@ -41,7 +44,9 @@ const Contact = () => {
         id="hidden_iframe"
         style={{ display: "none" }}
       />
-      {Submitted ? <p>Thank you for your message!</p> : null}
+      {Submitted ? (
+        <p style={{ color: "yellow" }}>Thank you for your message!</p>
+      ) : null}
     </section>
   );
 };
