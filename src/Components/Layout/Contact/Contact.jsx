@@ -2,6 +2,10 @@ import "./Contact.scss";
 import { useState } from "react";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
   const handleSubmit = () => {
     var btn = document.getElementById("btn");
     var btnText = document.getElementById("btnText");
@@ -13,16 +17,13 @@ const Contact = () => {
       setMessage("");
     }, 100);
   };
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
 
   return (
     <section id="contact">
       <h2>Contact me</h2>
       <form
         name="gform"
-        id="gform"
+        className="contactForm"
         encType="text/plain"
         action="https://docs.google.com/forms/d/e/1FAIpQLSeuAY60cHY1ObpLORogk_D5_buCYRtk3cwKrB7QNLR9UGhl0Q/formResponse?"
         target="hidden_iframe"
