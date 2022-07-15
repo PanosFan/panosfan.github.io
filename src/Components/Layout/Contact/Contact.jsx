@@ -57,7 +57,7 @@ const Contact = () => {
           required
           value={message}
           name="entry.1013502747"
-          id="entry.1013502747"
+          id="messageTextArea"
           onChange={(e) => setMessage(e.target.value)}
         />
         <label htmlFor="Message" id="messageLabel">
