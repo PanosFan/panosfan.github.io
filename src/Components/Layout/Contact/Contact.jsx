@@ -1,5 +1,6 @@
 import "./Contact.scss";
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -7,19 +8,17 @@ const Contact = () => {
   const [message, setMessage] = useState("");
 
   const handleSubmit = () => {
-    var btn = document.getElementById("btn");
-    var btnText = document.getElementById("btnText");
-    btnText.innerHTML = "Thanks";
-    btn.classList.add("submitted");
     setTimeout(() => {
       setName("");
       setEmail("");
       setMessage("");
-    }, 100);
+      toast("Thanks for contacting me! \n Will be in touch with you shortly.");
+    }, 0);
   };
 
   return (
     <section id="contact">
+      <Toaster />
       <h2>Contact me</h2>
       <form
         name="gform"
@@ -64,12 +63,8 @@ const Contact = () => {
           Message
         </label>
         <button id="btn" type="submit" className="submitButton">
-          <p id="btnText">Submit</p>
-          <div class="checked">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
-              <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path>
-            </svg>
-          </div>
+          <span>Submit</span>
+          <div className="wave"></div>
         </button>
       </form>
       <iframe
