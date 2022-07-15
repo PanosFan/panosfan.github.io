@@ -29,25 +29,30 @@ const Contact = () => {
         target="hidden_iframe"
         onSubmit={handleSubmit}
       >
-        <label htmlFor="Name">Name</label>
         <input
           required
           value={name}
           type="text"
           name="entry.606424351"
-          id="entry.606424351"
+          id="nameInput"
           onChange={(e) => setName(e.target.value)}
         />
-        <label htmlFor="Email">Email</label>
+        <label htmlFor="Name" id="nameLabel">
+          Name
+        </label>
+
         <input
           required
           value={email}
           type="email"
           name="entry.1555727373"
-          id="entry.1555727373"
+          id="mailInput"
           onChange={(e) => setEmail(e.target.value)}
         />
-        <label htmlFor="Message">Message</label>
+        <label htmlFor="Email" id="mailLabel">
+          Email
+        </label>
+
         <textarea
           required
           value={message}
@@ -55,6 +60,9 @@ const Contact = () => {
           id="entry.1013502747"
           onChange={(e) => setMessage(e.target.value)}
         />
+        <label htmlFor="Message" id="messageLabel">
+          Message
+        </label>
         <button id="btn" type="submit" className="submitButton">
           <p id="btnText">Submit</p>
           <div class="checked">
