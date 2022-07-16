@@ -19,7 +19,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <Toaster />
-      <h2>Contact me</h2>
+      <h4>Contact me</h4>
       <form
         name="gform"
         className="contactForm"

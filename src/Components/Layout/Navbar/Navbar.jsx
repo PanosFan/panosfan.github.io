@@ -17,13 +17,13 @@ const Navbar = () => {
           <FaUser />
           <span>About</span>
         </Link>
-        <Link activeClass="active" smooth spy to="projects">
-          <MdOutlineWork />
-          <span>Projects</span>
-        </Link>
         <Link activeClass="active" smooth spy to="skills">
           <MdComputer />
           <span>Skills</span>
+        </Link>
+        <Link activeClass="active" smooth spy to="projects">
+          <MdOutlineWork />
+          <span>Projects</span>
         </Link>
         <Link activeClass="active" smooth spy to="contact">
           <BiMessageDetail />
