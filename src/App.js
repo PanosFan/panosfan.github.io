@@ -1,6 +1,7 @@
 import "./Config.scss";
 import { useEffect, useState } from "react";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Footer from "./Components/Layout/Footer/Footer";
 import Header from "./Components/Layout/Header/Header";
 import Navbar from "./Components/Layout/Navbar/Navbar";
@@ -15,6 +16,7 @@ function App() {
   const [landed, setLanded] = useState(false);
 
   useEffect(() => {
+    Aos.init({ duration: 1500 });
     setTimeout(() => {
       setLanded(false);
     }, 2300);

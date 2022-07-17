@@ -3,7 +3,7 @@ import "./Aside.scss";
 
 const Aside = () => {
   return (
-    <aside>
+    <aside data-aos="fade">
       <Links />
       <a id="mailTo" href="mailto:panfanartzis@gmail.com">
         panfanartzis@gmail.com

@@ -1,7 +1,5 @@
 import "./Contact.scss";
-import { useState, useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
@@ -17,10 +15,6 @@ const Contact = () => {
       toast("Thanks for contacting me! \n Will be in touch with you shortly.");
     }, 0);
   };
-
-  useEffect(() => {
-    Aos.init({ duration: 1500 });
-  }, []);
 
   return (
     <section data-aos="fade-up" id="contact">

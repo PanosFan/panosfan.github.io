@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Links = () => {
   const openLink = (url) => window.open(url, "_blank");
+
   return (
     <ul className="links">
       <li
