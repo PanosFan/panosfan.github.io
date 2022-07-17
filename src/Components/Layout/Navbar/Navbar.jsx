@@ -13,26 +13,36 @@ const Navbar = () => {
   }, []);
   return (
     <nav>
-      <div className="content">
+      <div className="content" data-aos-delay="0" data-aos="fade">
         <Link activeClass="active" smooth spy to="home">
           <ImHome />
-          <span data-aos="zoom-in">Home</span>
+          <span data-aos="zoom-in" data-aos-delay="150">
+            Home
+          </span>
         </Link>
         <Link activeClass="active" smooth spy to="about">
           <FaUser />
-          <span data-aos="zoom-in">About</span>
+          <span data-aos="zoom-in" data-aos-delay="300">
+            About
+          </span>
         </Link>
         <Link activeClass="active" smooth spy to="skills">
           <MdComputer />
-          <span data-aos="zoom-in">Skills</span>
+          <span data-aos="zoom-in" data-aos-delay="450">
+            Skills
+          </span>
         </Link>
         <Link activeClass="active" smooth spy to="projects">
           <MdOutlineWork />
-          <span data-aos="zoom-in">Projects</span>
+          <span data-aos="zoom-in" data-aos-delay="600">
+            Projects
+          </span>
         </Link>
         <Link activeClass="active" smooth spy to="contact">
           <BiMessageDetail />
-          <span data-aos="zoom-in">Contact</span>
+          <span data-aos="zoom-in" data-aos-delay="750">
+            Contact
+          </span>
         </Link>
       </div>
     </nav>
