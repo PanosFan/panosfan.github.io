@@ -38,20 +38,22 @@ const Skills = () => {
         </div>
         <div className="backEnd card">
           <h5>Backend Development</h5>
-          <ul>
-            <li>
-              <div className="skill">MySQL</div>
-              <div className="experience">Experienced</div>
-            </li>
-            <li>
-              <div className="skill">PHP</div>
-              <div className="experience">Intermediate</div>
-            </li>
-            <li>
-              <div className="skill">Laravel</div>
-              <div className="experience">Experienced</div>
-            </li>
-          </ul>
+          <div className="content">
+            <ul>
+              <li>
+                <div className="skill">MySQL</div>
+                <div className="experience">Experienced</div>
+              </li>
+              <li>
+                <div className="skill">PHP</div>
+                <div className="experience">Intermediate</div>
+              </li>
+              <li>
+                <div className="skill">Laravel</div>
+                <div className="experience">Experienced</div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
