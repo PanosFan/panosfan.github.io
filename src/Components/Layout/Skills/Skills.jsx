@@ -32,7 +32,7 @@ const Skills = () => {
                 <div className="experience">Experienced</div>
               </li>
               <div className="skill">TailWind</div>
-              <div>Basic</div>
+              <div className="experience">Basic</div>
             </ul>
           </div>
         </div>
