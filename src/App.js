@@ -16,7 +16,7 @@ function App() {
   const [landed, setLanded] = useState(false);
 
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({ duration: 1500, once: true });
     setTimeout(() => {
       setLanded(false);
     }, 2300);

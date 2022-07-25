@@ -1,0 +1,129 @@
+@import "../../Config.scss";
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.links {
+  position: fixed;
+  left: 7%;
+  bottom: 0;
+  list-style: none;
+
+  //after psudo like mailto element
+  // margin-bottom: 5em;
+
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: -5em;
+  //   left: 30px;
+  //   width: 1px;
+  //   height: 13em;
+  //   background: teal;
+  //   z-index: -1;
+  // }
+
+  .icon {
+    color: $bgColour;
+    position: relative;
+    background: $white;
+    border-radius: 50%;
+    margin: 10px 0;
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: $transition;
+  }
+
+  .tooltip {
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    background: $white;
+    color: $white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: $transition;
+  }
+
+  .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: $white;
+    left: -0.1px;
+    top: 12px;
+    transform: translate(-50%) rotate(45deg);
+    transition: $transition;
+  }
+
+  .icon:hover .tooltip {
+    left: 52px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .icon:hover span,
+  .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .facebook:hover,
+  .facebook:hover .tooltip,
+  .facebook:hover .tooltip::before {
+    background: $fbColour;
+    color: $white;
+  }
+
+  .github:hover,
+  .github:hover .tooltip,
+  .github:hover .tooltip::before {
+    background: $ghColour;
+    color: $white;
+  }
+
+  .linkedin:hover,
+  .linkedin:hover .tooltip,
+  .linkedin:hover .tooltip::before {
+    background: $liColour;
+    color: $white;
+  }
+}
+
+@media (max-width: 1200px) {
+  .links {
+    position: unset;
+    display: inline-flex;
+    gap: 1em;
+
+    .tooltip {
+      top: 0;
+      left: unset;
+    }
+
+    .tooltip::before {
+      top: unset;
+      bottom: -3px;
+      left: 50%;
+      transform: translate(-50%) rotate(45deg);
+    }
+
+    .icon:hover .tooltip {
+      left: unset;
+      top: -40px;
+    }
+  }
+}

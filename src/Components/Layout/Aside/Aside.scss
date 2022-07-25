@@ -1,0 +1,64 @@
+@import "../../../Config.scss";
+aside {
+  #mailTo {
+    transition: $transition;
+    position: fixed;
+    right: 7%;
+    bottom: 0;
+    text-decoration: none;
+    color: $textColour;
+    writing-mode: vertical-rl;
+    margin-bottom: 4em;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    // font-weight: bold;
+
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   top: -5em;
+    //   left: 8px;
+    //   width: 1px;
+    //   height: 5em;
+    //   background: teal;
+    // }
+
+    &::after {
+      transition: $transition;
+      content: "";
+      position: absolute;
+      bottom: -4em;
+      left: 10px;
+      width: 1px;
+      height: 4em;
+      background: $textColour;
+      pointer-events: none;
+    }
+
+    &:hover {
+      letter-spacing: 1.5px;
+      color: teal;
+      // &::after {
+      //   background: teal;
+      // }
+    }
+  }
+
+  @media screen and (max-width: 1750px) {
+    .links {
+      left: 0;
+    }
+    #mailTo {
+      right: 0;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .links {
+      display: none;
+    }
+    #mailTo {
+      display: none;
+    }
+  }
+}

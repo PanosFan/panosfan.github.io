@@ -1,4 +1,4 @@
-*.scss
+# *.scss
 # dependencies
 /node_modules
 /.pnp

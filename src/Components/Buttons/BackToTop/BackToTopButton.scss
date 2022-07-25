@@ -1,0 +1,71 @@
+@import "../../../Config.scss";
+.backToTopButton {
+  margin: 1.5em;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 75%);
+  border: none;
+  border-radius: 50%;
+
+  svg {
+    fill: azure;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &:before {
+    content: "Back to Top";
+    position: absolute;
+    transform: translateX(-50%) translateY(40px);
+    font-size: 15px;
+    transition: 200ms;
+    color: transparent;
+    font-weight: bold;
+    display: none;
+    color: $white;
+  }
+
+  &:hover {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    &:before {
+      display: unset;
+    }
+    svg {
+      animation: bounce 1.5s infinite linear;
+    }
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+  25% {
+    transform: translateX(-50%) translateY(-65%);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+  75% {
+    transform: translateX(-50%) translateY(-35%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .backToTopButton {
+    width: 50px;
+    height: 50px;
+    &:before {
+      transform: translateX(-50%) translateY(35px);
+    }
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

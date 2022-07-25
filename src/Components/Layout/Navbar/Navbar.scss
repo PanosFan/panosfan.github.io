@@ -1,0 +1,86 @@
+@import "../../../Config.scss";
+
+nav {
+  position: fixed;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  backdrop-filter: blur(3px);
+  border-radius: 30px;
+  padding: 0 0.5em 1.2em 0.5em;
+
+  .content {
+    display: flex;
+    gap: 1em;
+    position: relative;
+    a {
+      display: flex;
+      cursor: pointer;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: $primaryColour;
+      background: transparent;
+      text-decoration: none;
+      font-size: 1.7rem;
+      padding: 0.8em;
+      position: static;
+      &:hover {
+        span {
+          color: $yellow;
+        }
+        svg {
+          transition: $transition;
+          transform: translateY(-0.4em);
+        }
+      }
+      span {
+        font-size: 1rem;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+    .active {
+      color: $yellow;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    .content {
+      gap: 0.6em;
+
+      a {
+        padding: 0.6em !important;
+        svg {
+          margin-bottom: 0.2em;
+        }
+        &:hover {
+          svg {
+            transform: translateY(-0.3em) !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    .content {
+      gap: 0.8em;
+
+      a {
+        svg {
+          margin-bottom: 0.2em;
+          font-size: 1.2rem;
+        }
+        span {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+$bgColour: #07224b;
+$primaryColour: #63e8ff;
+$textColour: #ccd6f6;
+$yellow: #bae10a;
+$black: #212121;
+$white: azure;
+$fbColour: #4267b2;
+$ghColour: #24292e;
+$liColour: #0077b5;
+
+.light {
+  background-color: $white;
+  color: $black;
+  .links {
+    .icon {
+      color: azure;
+      background-color: black;
+    }
+  }
+  .backToTopButton {
+    &:before {
+      color: $black;
+    }
+  }
+}
