@@ -37,6 +37,28 @@ html {
       margin: 0 auto;
       padding: 0 1.5em;
     }
+    .link {
+      text-decoration: none;
+      transition: $transition;
+      color: teal;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $primaryColour;
+        transition: $transition;
+      }
+      &:hover {
+        color: $primaryColour;
+        &:before {
+          width: 100%;
+        }
+      }
+    }
   }
 }
 

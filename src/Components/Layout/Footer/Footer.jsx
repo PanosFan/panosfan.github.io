@@ -7,7 +7,7 @@ const Footer = () => {
     <footer data-aos="fade-up">
       <Links />
       <div>
-        <a id="mailTo" href="mailto:panfanartzis@gmail.com">
+        <a className="mailTo link" href="mailto:panfanartzis@gmail.com">
           panfanartzis@gmail.com
         </a>
       </div>
