@@ -4,7 +4,7 @@ import Links from "../../Links/Links";
 
 const Footer = () => {
   return (
-    <footer className="text-center" data-aos="fade-up">
+    <footer data-aos="fade-up">
       <Links />
       <div>
         <a id="mailTo" href="mailto:panfanartzis@gmail.com">

@@ -17,31 +17,27 @@ $transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 html {
   scrollbar-color: #495670 transparent;
   scrollbar-width: thin;
-}
 
-body {
-  color: $textColour;
-  font-family: $font;
-  background-color: $bgColour;
-  line-height: 1.3;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  body {
+    color: $textColour;
+    font-family: $font;
+    background-color: $bgColour;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-h4 {
-  text-align: center;
-  margin: 1em 0;
-  font-size: 1.5rem;
-}
+    h4 {
+      text-align: center;
+      margin: 1em 0;
+      font-size: 1.5rem;
+    }
 
-.container {
-  width: min(80%, 1200px);
-  margin: 0 auto;
-  padding: 0 1.5em;
-}
-
-.text-center {
-  text-align: center;
+    .container {
+      width: min(80%, 1200px);
+      margin: 0 auto;
+      padding: 0 1.5em;
+    }
+  }
 }
 
 @media (max-width: 790px) {
