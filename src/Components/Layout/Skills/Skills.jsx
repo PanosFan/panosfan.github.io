@@ -24,11 +24,11 @@ const Skills = () => {
             </ul>
             <ul>
               <li>
-                <div className="skill">Bootstrap</div>
+                <div className="skill">React</div>
                 <div className="experience">Experienced</div>
               </li>
               <li>
-                <div className="skill">React</div>
+                <div className="skill">Bootstrap</div>
                 <div className="experience">Experienced</div>
               </li>
               <div className="skill">TailWind</div>
@@ -41,15 +41,15 @@ const Skills = () => {
           <div className="content">
             <ul>
               <li>
-                <div className="skill">MySQL</div>
-                <div className="experience">Experienced</div>
-              </li>
-              <li>
                 <div className="skill">PHP</div>
                 <div className="experience">Intermediate</div>
               </li>
               <li>
                 <div className="skill">Laravel</div>
+                <div className="experience">Experienced</div>
+              </li>
+              <li>
+                <div className="skill">MySQL</div>
                 <div className="experience">Experienced</div>
               </li>
             </ul>

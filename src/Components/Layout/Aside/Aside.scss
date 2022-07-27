@@ -43,8 +43,10 @@ aside {
       // }
     }
   }
+}
 
-  @media screen and (max-width: 1750px) {
+@media screen and (max-width: 1750px) {
+  aside {
     .links {
       left: 0;
     }
@@ -52,8 +54,10 @@ aside {
       right: 0;
     }
   }
+}
 
-  @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
+  aside {
     .links {
       display: none;
     }
