@@ -34,6 +34,7 @@ const Contact = () => {
           type="text"
           name="entry.606424351"
           id="nameInput"
+          className={name.length > 0 ? "activeName" : ""}
           onChange={(e) => setName(e.target.value)}
         />
         <label htmlFor="Name" id="nameLabel">
@@ -46,6 +47,7 @@ const Contact = () => {
           type="email"
           name="entry.1555727373"
           id="mailInput"
+          className={email.length > 0 ? "activeMail" : ""}
           onChange={(e) => setEmail(e.target.value)}
         />
         <label htmlFor="Email" id="mailLabel">
@@ -57,6 +59,7 @@ const Contact = () => {
           value={message}
           name="entry.1013502747"
           id="messageTextArea"
+          className={message.length > 0 ? "activeMessage" : ""}
           onChange={(e) => setMessage(e.target.value)}
         />
         <label htmlFor="Message" id="messageLabel">
