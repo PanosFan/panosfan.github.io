@@ -11,7 +11,14 @@ const Footer = () => {
           panfanartzis@gmail.com
         </a>
       </div>
-      <p>Designed and built by Panagiotis Fanartzis.</p>
+      <p>
+        <a
+          href="https://github.com/PanosFan/panosfan.github.io/tree/main"
+          className="link"
+        >
+          Designed and built by Panagiotis Fanartzis
+        </a>
+      </p>
       <BackToTopButton />
     </footer>
   );

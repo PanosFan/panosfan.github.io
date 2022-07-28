@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Footer from "./Components/Layout/Footer/Footer";
-import Header from "./Components/Layout/Header/Header";
+import Hero from "./Components/Layout/Hero/Hero";
 import Navbar from "./Components/Layout/Navbar/Navbar";
 import About from "./Components/Layout/About/About";
 import Contact from "./Components/Layout/Contact/Contact";
@@ -32,7 +32,7 @@ function App() {
       <Navbar />
       <Aside />
       <main className="container">
-        <Header />
+        <Hero />
         <About />
         <Skills />
         <Projects />

@@ -87,7 +87,21 @@
     padding: 0 0.5em;
   }
 }
-
+.activeName {
+  & + label {
+    color: $primaryColour;
+  }
+}
+.activeMail {
+  & + label {
+    color: $primaryColour;
+  }
+}
+.activeMessage {
+  & + label {
+    color: $primaryColour;
+  }
+}
 // submit button style
 .submitButton {
   cursor: pointer;

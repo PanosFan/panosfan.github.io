@@ -1,11 +1,11 @@
-import "./Header.scss";
+import "./Hero.scss";
 import LearnMoreButton from "../../Buttons/LearnMore/LearnMoreButton";
 import Link from "react-scroll/modules/components/Link";
 
-const Header = () => {
+const Hero = () => {
   return (
     <section id="home">
-      <h4>Header</h4>
+      <h4>Hero</h4>
       <Link activeClass="active" smooth spy to="about">
         <LearnMoreButton />
       </Link>
@@ -13,4 +13,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Hero;
