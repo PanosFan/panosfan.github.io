@@ -16,6 +16,24 @@ const Contact = () => {
     }, 0);
   };
 
+  const validateMail = () => {
+    const re =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  };
+
+  const handleMailClass = () => {
+    if (email.length > 0) {
+      if (validateMail()) {
+        return "activeMail";
+      } else {
+        return "wrongMail";
+      }
+    } else {
+      return "";
+    }
+  };
+
   return (
     <section id="contact">
       <div data-aos="fade-up">
@@ -48,7 +66,7 @@ const Contact = () => {
             type="email"
             name="entry.1555727373"
             id="mailInput"
-            className={email.length > 0 ? "activeMail" : ""}
+            className={handleMailClass()}
             onChange={(e) => setEmail(e.target.value)}
           />
           <label htmlFor="Email" id="mailLabel">

@@ -102,6 +102,16 @@
   }
   border-color: teal !important;
 }
+.wrongMail {
+  & + label {
+    transform: translateY(-0.4em);
+    font-size: 1rem;
+    padding: 0 0.5em;
+    background-color: $bgColour;
+    color: red;
+  }
+  border-color: red !important;
+}
 .activeMessage {
   border-color: teal !important;
 

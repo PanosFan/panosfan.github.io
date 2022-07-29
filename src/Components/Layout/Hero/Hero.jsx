@@ -4,7 +4,7 @@ import Link from "react-scroll/modules/components/Link";
 
 const Hero = () => {
   return (
-    <section id="home">
+    <section id="home" data-aos="fade-down">
       <h1>
         Hello, I'm <span>Panagiotis Fanartzis</span>. <br />
         I'm a full stack web developer.
