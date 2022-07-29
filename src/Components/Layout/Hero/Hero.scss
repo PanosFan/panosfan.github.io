@@ -7,10 +7,36 @@
   gap: 4em;
   padding-bottom: 25em;
   h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     padding-top: 8em;
     span {
       color: $primaryColour;
+    }
+  }
+}
+
+@media screen and (max-width: 695px) {
+  #home {
+    padding-bottom: 15em;
+    h1 {
+      font-size: 2rem;
+      padding-top: 10em;
+    }
+  }
+}
+@media screen and (max-width: 560px) {
+  #home {
+    h1 {
+      font-size: 1.5rem;
+      padding-top: 14em;
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  #home {
+    h1 {
+      font-size: 1rem;
+      padding-top: 21em;
     }
   }
 }
