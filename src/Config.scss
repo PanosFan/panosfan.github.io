@@ -40,7 +40,7 @@ html {
     .link {
       text-decoration: none;
       transition: $transition;
-      color: teal;
+      color: $linksColour;
       position: relative;
       &:before {
         content: "";

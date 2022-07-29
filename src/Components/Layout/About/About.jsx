@@ -2,8 +2,10 @@ import "./About.scss";
 
 const About = () => {
   return (
-    <section data-aos="fade-up" id="about">
-      <h4>About</h4>
+    <section id="about">
+      <div data-aos="fade-up">
+        <h4>About</h4>
+      </div>
     </section>
   );
 };

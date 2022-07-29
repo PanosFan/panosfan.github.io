@@ -8,11 +8,13 @@ const Projects = () => {
   });
 
   return (
-    <section data-aos="fade-up" id="projects">
-      <h4>Projects</h4>
-      {/* {response && <p>{response.statusText}</p>}
+    <section id="projects">
+      <div data-aos="fade-up">
+        <h4>Projects</h4>
+        {/* {response && <p>{response.statusText}</p>}
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>} */}
+      </div>
     </section>
   );
 };

@@ -15,6 +15,7 @@ const Footer = () => {
         <a
           href="https://github.com/PanosFan/panosfan.github.io/tree/main"
           className="link"
+          target="_blank"
         >
           Designed and built by Panagiotis Fanartzis
         </a>

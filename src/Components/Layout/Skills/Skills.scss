@@ -87,13 +87,24 @@
       flex-direction: column;
 
       .card {
+        width: 90%;
+        margin-inline: auto;
         padding: 2.5em 6em;
       }
     }
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 580px) {
+  #skills {
+    .cards {
+      .card {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 490px) {
   #skills {
     .cards {
       .card {
