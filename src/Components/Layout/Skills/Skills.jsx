@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <section id="skills">
       <div data-aos="fade-up">
-        <h4>My experience</h4>
+        <h2>My experience</h2>
         <div className="cards">
           <div className="frontEnd card">
             <h5>Frontend Development</h5>

@@ -20,7 +20,7 @@ const Contact = () => {
     <section id="contact">
       <div data-aos="fade-up">
         <Toaster />
-        <h4>Contact me</h4>
+        <h2>Contact me</h2>
         <form
           name="gform"
           className="contactForm"

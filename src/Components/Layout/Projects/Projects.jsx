@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <div data-aos="fade-up">
-        <h4>Projects</h4>
+        <h2>Projects</h2>
         {/* {response && <p>{response.statusText}</p>}
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>} */}

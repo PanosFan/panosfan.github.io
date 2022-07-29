@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section id="about">
       <div data-aos="fade-up">
-        <h4>About</h4>
+        <h2>About</h2>
       </div>
     </section>
   );
