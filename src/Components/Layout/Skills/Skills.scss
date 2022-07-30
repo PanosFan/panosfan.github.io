@@ -110,6 +110,11 @@
       .card {
         padding: 2.5em 1em;
       }
+      .frontEnd {
+        .content {
+          justify-content: space-around;
+        }
+      }
     }
   }
 }

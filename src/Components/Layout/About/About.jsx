@@ -3,9 +3,10 @@ import "./About.scss";
 const About = () => {
   return (
     <section id="about">
-      <div data-aos="fade-up">
-        <h2>About</h2>
-      </div>
+      <h2 data-aos="fade-up">
+        About
+        <div className="headersLine"></div>
+      </h2>
     </section>
   );
 };

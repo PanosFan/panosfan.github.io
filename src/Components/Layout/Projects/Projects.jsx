@@ -9,12 +9,13 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <div data-aos="fade-up">
-        <h2>Projects</h2>
-        {/* {response && <p>{response.statusText}</p>}
+      <h2 data-aos="fade-up">
+        Projects
+        <div className="headersLine"></div>
+      </h2>
+      {/* {response && <p>{response.statusText}</p>}
       {loading && <p>Loading...</p>}
       {error && <p>{error}</p>} */}
-      </div>
     </section>
   );
 };
