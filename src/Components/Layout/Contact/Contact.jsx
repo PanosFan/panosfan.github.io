@@ -42,6 +42,7 @@ const Contact = () => {
         <div className="headersLine"></div>
       </h2>
       <form
+        data-aos="zoom-in"
         name="gform"
         className="contactForm"
         encType="text/plain"
@@ -50,7 +51,6 @@ const Contact = () => {
         onSubmit={handleSubmit}
       >
         <input
-          data-aos="fade-right"
           required
           value={name}
           type="text"
@@ -59,12 +59,11 @@ const Contact = () => {
           className={name.length > 0 ? "activeName" : ""}
           onChange={(e) => setName(e.target.value)}
         />
-        <label htmlFor="Name" id="nameLabel" data-aos="fade-left">
+        <label htmlFor="Name" id="nameLabel">
           Name
         </label>
 
         <input
-          data-aos="fade-right"
           required
           value={email}
           type="email"
@@ -73,12 +72,11 @@ const Contact = () => {
           className={handleMailClass()}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <label htmlFor="Email" id="mailLabel" data-aos="fade-left">
+        <label htmlFor="Email" id="mailLabel">
           Email
         </label>
 
         <textarea
-          data-aos="fade-right"
           required
           value={message}
           name="entry.1013502747"
@@ -86,15 +84,11 @@ const Contact = () => {
           className={message.length > 0 ? "activeMessage" : ""}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <label htmlFor="Message" id="messageLabel" data-aos="fade-left">
+        <label htmlFor="Message" id="messageLabel">
           Message
         </label>
-        <button
-          id="btn"
-          type="submit"
-          className="submitButton"
-          data-aos="fade-right"
-        >
+
+        <button id="btn" type="submit" className="submitButton">
           <span>Submit</span>
           <div className="wave"></div>
         </button>
