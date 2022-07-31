@@ -1,6 +1,9 @@
 import "./Skills.scss";
 
 const Skills = () => {
+  const detectScreenWidth = () => {
+    return window.innerWidth < 900 ? true : false;
+  };
   return (
     <section id="skills">
       <h2 data-aos="fade-up">
@@ -8,7 +11,10 @@ const Skills = () => {
         <div className="headersLine"></div>
       </h2>
       <div className="cards">
-        <div className="frontEnd card" data-aos="flip-left">
+        <div
+          className="frontEnd card"
+          data-aos={detectScreenWidth() ? "flip-right" : "fade-right"}
+        >
           <h5>Frontend Development</h5>
           <div className="content">
             <ul>
@@ -39,7 +45,10 @@ const Skills = () => {
             </ul>
           </div>
         </div>
-        <div className="backEnd card" data-aos="flip-right">
+        <div
+          className="backEnd card"
+          data-aos={detectScreenWidth() ? "flip-left" : "fade-left"}
+        >
           <h5>Backend Development</h5>
           <div className="content">
             <ul>
