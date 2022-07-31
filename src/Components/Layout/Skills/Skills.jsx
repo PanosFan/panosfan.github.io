@@ -8,7 +8,7 @@ const Skills = () => {
         <div className="headersLine"></div>
       </h2>
       <div className="cards">
-        <div className="frontEnd card" data-aos="fade-right">
+        <div className="frontEnd card" data-aos="flip-left">
           <h5>Frontend Development</h5>
           <div className="content">
             <ul>
@@ -39,7 +39,7 @@ const Skills = () => {
             </ul>
           </div>
         </div>
-        <div className="backEnd card" data-aos="fade-left">
+        <div className="backEnd card" data-aos="flip-right">
           <h5>Backend Development</h5>
           <div className="content">
             <ul>
