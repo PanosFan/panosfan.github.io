@@ -24,6 +24,7 @@ html {
     font-family: $font;
     background-color: $bgColour;
     line-height: $lineHeight;
+    overflow-x: hidden;
 
     h2 {
       text-align: center;
